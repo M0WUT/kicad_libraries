@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 171050601
+D 0.8 - 6V, 5A, Non-isolated DC/DC converter
+F https://katalog.we-online.de/pm/datasheet/171050601.pdf
+$ENDCMP
+#
+#End Doc Library
