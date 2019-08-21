@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADM1192
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM1192.pdf
+$ENDCMP
+#
+$CMP TPS3701DDCR
+F http://www.ti.com/lit/ds/symlink/tps3701.pdf
+$ENDCMP
+#
+#End Doc Library

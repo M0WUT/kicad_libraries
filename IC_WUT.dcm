@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LTC2216
+F https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf
+$ENDCMP
+#
 $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
 $ENDCMP

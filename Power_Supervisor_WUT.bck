@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS3701DDCR
+F http://www.ti.com/lit/ds/symlink/tps3701.pdf
+$ENDCMP
+#
+$CMP TPS37101DDCR
+F http://www.ti.com/lit/ds/symlink/tps3701.pdf
+$ENDCMP
+#
+#End Doc Library
