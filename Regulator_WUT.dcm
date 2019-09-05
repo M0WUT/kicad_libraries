@@ -5,4 +5,9 @@ D 0.8 - 6V, 5A, Non-isolated DC/DC converter
 F https://katalog.we-online.de/pm/datasheet/171050601.pdf
 $ENDCMP
 #
+$CMP LT3460
+D 300mA / 180mA (LT3460-1) fixed frequency Step-Up regulator
+F https://docs-emea.rs-online.com/webdocs/10ed/0900766b810eda0a.pdf
+$ENDCMP
+#
 #End Doc Library
