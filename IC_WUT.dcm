@@ -8,4 +8,8 @@ $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
 $ENDCMP
 #
+$CMP TXS02612
+F http://www.ti.com/lit/ds/symlink/txs02612.pdf
+$ENDCMP
+#
 #End Doc Library
