@@ -1,7 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LTC2216
+F https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf
+$ENDCMP
+#
+$CMP MAX9612
+F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
+$ENDCMP
+#
 $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
+$ENDCMP
+#
+$CMP TXS02612
+F http://www.ti.com/lit/ds/symlink/txs02612.pdf
 $ENDCMP
 #
 #End Doc Library
