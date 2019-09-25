@@ -4,6 +4,10 @@ $CMP LTC2216
 F https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf
 $ENDCMP
 #
+$CMP MAX9611
+F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
+$ENDCMP
+#
 $CMP MAX9612
 F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
 $ENDCMP
