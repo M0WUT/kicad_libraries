@@ -20,6 +20,12 @@ $CMP TLV803
 F http://www.ti.com/lit/ds/symlink/tlv803.pdf
 $ENDCMP
 #
+$CMP TPS2051B
+D Single power-distribution switcher
+K 1-chanel power-distribution USB
+F http://www.ti.com/lit/ds/symlink/tps2041.pdf
+$ENDCMP
+#
 $CMP TXS02612
 F http://www.ti.com/lit/ds/symlink/txs02612.pdf
 $ENDCMP
