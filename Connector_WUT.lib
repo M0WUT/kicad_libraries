@@ -140,8 +140,8 @@ ENDDEF
 #
 # Connector_RJ45_Magjack_Abracon_ARJM11D7-502-AB-EW2
 #
-DEF Connector_RJ45_Magjack_Abracon_ARJM11D7-502-AB-EW2 CN 0 40 Y Y 1 F N
-F0 "CN" 350 750 50 H V C CNN
+DEF Connector_RJ45_Magjack_Abracon_ARJM11D7-502-AB-EW2 J 0 40 Y Y 1 F N
+F0 "J" 350 750 50 H V C CNN
 F1 "Connector_RJ45_Magjack_Abracon_ARJM11D7-502-AB-EW2" 1000 -1850 50 H V C CNN
 F2 "Connector_WUT:Connector_RJ45_Magjack_Abracon_ARJM11D7-502-AB-EW2" -300 0 50 H I C CNN
 F3 "" -300 0 50 H I C CNN
