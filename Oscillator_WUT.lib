@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TCXO_Sitime_SiT5001
+#
+DEF TCXO_Sitime_SiT5001 Y 0 40 Y Y 1 F N
+F0 "Y" 250 300 50 H V C CNN
+F1 "TCXO_Sitime_SiT5001" 450 -300 50 H V C CNN
+F2 "Oscillator_WUT:TCXO_Sitime_SiT5001_5x3.2mm" 0 0 100 H I C CNN
+F3 "" 0 0 100 H I C CNN
+DRAW
+S -350 250 350 -250 0 1 0 f
+X VC/OE/~ST 1 -450 0 100 R 50 50 1 1 P
+X Gnd 2 0 -350 100 U 50 50 1 1 W
+X Out 3 450 0 100 L 50 50 1 1 O
+X Vdd 4 0 350 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
