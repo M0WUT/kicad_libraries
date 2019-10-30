@@ -4,7 +4,11 @@ $CMP FPGA_Lattice_LCMXO2-640HC-4SG48C
 F http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/MachXO23/MachXO2FamilyDataSheet.pdf
 $ENDCMP
 #
-$CMP LTC2216
+$CMP LTC2216_Full_Rate_CMOS
+F https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf
+$ENDCMP
+#
+$CMP LTC2216_LVDS
 F https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf
 $ENDCMP
 #
