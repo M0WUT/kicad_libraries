@@ -24,6 +24,10 @@ $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
 $ENDCMP
 #
+$CMP TLC59281RGER
+F http://www.ti.com/lit/ds/symlink/tlc59281.pdf
+$ENDCMP
+#
 $CMP TLV7031DCK
 F http://www.ti.com/lit/ds/symlink/tlv7031.pdf
 $ENDCMP
