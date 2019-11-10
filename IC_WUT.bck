@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AD9744_LFCSP
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD9744.pdf
+$ENDCMP
+#
+$CMP ADM7154
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM7154.pdf
+$ENDCMP
+#
+$CMP ADR280RT
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR280.pdf
+$ENDCMP
+#
 $CMP FPGA_Lattice_LCMXO2-640HC-4SG48C
 F http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/MachXO23/MachXO2FamilyDataSheet.pdf
 $ENDCMP
@@ -22,6 +34,10 @@ $ENDCMP
 #
 $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
+$ENDCMP
+#
+$CMP TLC59281RGER
+F http://www.ti.com/lit/ds/symlink/tlc59281.pdf
 $ENDCMP
 #
 $CMP TLV7031DCK
