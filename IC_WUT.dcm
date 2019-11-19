@@ -4,6 +4,10 @@ $CMP AD9744_LFCSP
 F https://www.analog.com/media/en/technical-documentation/data-sheets/AD9744.pdf
 $ENDCMP
 #
+$CMP ADAU1361
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1361.pdf
+$ENDCMP
+#
 $CMP ADM7154
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM7154.pdf
 $ENDCMP
@@ -30,6 +34,10 @@ $ENDCMP
 #
 $CMP MAX9612
 F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
+$ENDCMP
+#
+$CMP SSM2211
+F https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2211.pdf
 $ENDCMP
 #
 $CMP TFP410PAP
