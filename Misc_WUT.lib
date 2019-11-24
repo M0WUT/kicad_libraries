@@ -81,4 +81,15 @@ X SDA 4 -350 -50 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Symbol
+#
+DEF Symbol M 0 40 Y Y 1 F N
+F0 "M" 0 100 50 H V C CNN
+F1 "Symbol" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
 #End Library
