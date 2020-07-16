@@ -36,6 +36,14 @@ $CMP MAX9612
 F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
 $ENDCMP
 #
+$CMP S16C03-8
+F http://www.smc-diodes.com/propdf/S16C03-8%20THRU%20S16C24-8%20N0289%20REV.A.pdf
+$ENDCMP
+#
+$CMP SSM2211
+F https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2211.pdf
+$ENDCMP
+#
 $CMP TFP410PAP
 F http://www.ti.com/lit/ds/symlink/tfp410.pdf
 $ENDCMP

@@ -4,4 +4,8 @@ $CMP TOSLINK_Cliff_ORJ-5
 F https://www.cliffuk.co.uk/products/optical/FCR684205R.pdf
 $ENDCMP
 #
+$CMP TOSLINK_Cliff_OTJ-5
+F https://www.cliffuk.co.uk/products/optical/FCR684205R.pdf
+$ENDCMP
+#
 #End Doc Library
