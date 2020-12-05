@@ -1,5 +1,21 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADL5904
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5904.pdf
+$ENDCMP
+#
+$CMP Filter_BPF_4-2
+D 2.45GHz BPF
+K BPF, FIlter
+F http://www.farnell.com/datasheets/1640997.pdf
+$ENDCMP
+#
+$CMP Minicircuits_BDCN-17-25+
+D Bi-directional coupler. 17dB 824-2525MHz
+K Coupler, directional
+F https://www.minicircuits.com/pdfs/BDCN-17-25.pdf
+$ENDCMP
+#
 $CMP RFSW6222
 D Dual SPDT Switch
 F https://www.qorvo.com/products/d/da001175

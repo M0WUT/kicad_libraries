@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Minicircuits_BDCN-17-25+
+D Bi-directional coupler. 17dB 824-2525MHz
+K Coupler, directional
+F https://www.minicircuits.com/pdfs/BDCN-17-25.pdf
+$ENDCMP
+#
 $CMP RFSW6222
 D Dual SPDT Switch
 F https://www.qorvo.com/products/d/da001175
