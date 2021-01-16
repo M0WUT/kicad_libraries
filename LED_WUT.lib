@@ -3,11 +3,11 @@ EESchema-LIBRARY Version 2.4
 #
 # LED_Cree_CLX6E-FKC
 #
-DEF ~LED_Cree_CLX6E-FKC LD 0 40 Y Y 3 L N
+DEF LED_Cree_CLX6E-FKC LD 0 40 Y Y 3 L N
 F0 "LD" 100 -100 50 H V C CNN
 F1 "LED_Cree_CLX6E-FKC" 0 350 50 H I C CNN
 F2 "LED_SMD:LED_RGB_PLCC-6" 0 0 50 H I C CNN
-F3 "" 0 0 200 H I C CNN
+F3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 0 0 200 H I C CNN
 DRAW
 T 0 0 150 50 0 1 0 Blue Normal 0 C C
 T 0 0 150 50 0 2 1 Green Normal 0 C C
@@ -33,6 +33,17 @@ X ~ 2 -150 0 100 R 50 50 2 1 P
 X ~ 5 150 0 100 L 50 50 2 1 P
 X ~ 3 -150 0 100 R 50 50 3 1 P
 X ~ 4 150 0 100 L 50 50 3 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_Dialight_553-0112F
+#
+DEF LED_Dialight_553-0112F LD 0 20 Y Y 1 F N
+F0 "LD" 0 0 50 H V C CNN
+F1 "LED_Dialight_553-0112F" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
 ENDDRAW
 ENDDEF
 #

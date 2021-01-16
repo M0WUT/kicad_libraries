@@ -1,0 +1,439 @@
+(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
+  (symbol "DMG4435SSS-13" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 2.54 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "DMG4435SSS-13" (id 1) (at 10.16 -2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.farnell.com/datasheets/2040082.pdf?_ga=2.14637297.757253015.1566033402-1939168838.1503764787&_gac=1.194491743.1565284125.Cj0KCQjwkK_qBRD8ARIsAOteukBYYe2GlS7gD1GFETM2sd87IsM2VOyyzfFwWzz79QBZc31uFjRILagaAgYcEALw_wcB" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "DMG4435SSS-13_1_1"
+      (circle (center -0.889 0) (radius 2.8194) (stroke (width 0.254)) (fill (type none)))
+      (circle (center 0 -1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (circle (center 0 1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (polyline
+        (pts
+          (xy -5.08 1.27)
+          (xy -2.286 1.27)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -2.286)
+          (xy -1.778 -1.27)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -1.778)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -0.508)
+          (xy -1.778 0.508)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 0)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 1.27)
+          (xy -1.778 2.286)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 1.778)
+          (xy 0 1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -2.54)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0 2.54)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.286 -1.905)
+          (xy -2.286 1.905)
+          (xy -2.286 1.905)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.254 0)
+          (xy -1.27 0.381)
+          (xy -1.27 -0.381)
+          (xy -0.254 0)
+        )
+        (stroke (width 0)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0.762 1.778)
+          (xy 0.762 -1.778)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.254 0.508)
+          (xy 0.381 0.381)
+          (xy 1.143 0.381)
+          (xy 1.27 0.254)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0.381)
+          (xy 0.381 -0.254)
+          (xy 1.143 -0.254)
+          (xy 0.762 0.381)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (pin passive line (at 0 5.08 270) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 5.08 270) (length 2.54) hide
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 5.08 270) (length 2.54) hide
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -7.62 1.27 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54) hide
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54) hide
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54) hide
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "SI1539CDL-T1-GE3" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 2.54 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SI1539CDL-T1-GE3" (id 1) (at 11.43 -2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.farnell.com/datasheets/2046888.pdf?_ga=2.10385267.757253015.1566033402-1939168838.1503764787&_gac=1.194507103.1566045244.Cj0KCQjwy97qBRDoARIsAITONTJuV5xFoCHf_GI1a48CAr1bhcTG8MWnV8MNsj2BZU5FrIPf5CF8XT8aAi5HEALw_wcB" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_locked" "" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (symbol "SI1539CDL-T1-GE3_1_1"
+      (circle (center -0.889 0) (radius 2.8194) (stroke (width 0.254)) (fill (type none)))
+      (circle (center 0 -1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (circle (center 0 1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (polyline
+        (pts
+          (xy -5.08 1.27)
+          (xy -2.286 1.27)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -2.286)
+          (xy -1.778 -1.27)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -1.778)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -0.508)
+          (xy -1.778 0.508)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 0)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 1.27)
+          (xy -1.778 2.286)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 1.778)
+          (xy 0 1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -2.54)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0 2.54)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.286 -1.905)
+          (xy -2.286 1.905)
+          (xy -2.286 1.905)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.254 0)
+          (xy -1.27 0.381)
+          (xy -1.27 -0.381)
+          (xy -0.254 0)
+        )
+        (stroke (width 0)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0 1.778)
+          (xy 0.762 1.778)
+          (xy 0.762 -1.778)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.254 0.508)
+          (xy 0.381 0.381)
+          (xy 1.143 0.381)
+          (xy 1.27 0.254)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0.381)
+          (xy 0.381 -0.254)
+          (xy 1.143 -0.254)
+          (xy 0.762 0.381)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 5.08 270) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -6.35 1.27 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+    (symbol "SI1539CDL-T1-GE3_2_1"
+      (circle (center -0.889 0) (radius 2.8194) (stroke (width 0.254)) (fill (type none)))
+      (circle (center 0 -1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (circle (center 0 1.778) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
+      (polyline
+        (pts
+          (xy -1.778 -1.778)
+          (xy 0 -1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -1.27)
+          (xy -1.778 -2.286)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 0)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 0.508)
+          (xy -1.778 -0.508)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 1.778)
+          (xy 0 1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 2.286)
+          (xy -1.778 1.27)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -1.778)
+          (xy 0 -2.54)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -1.778)
+          (xy 0 0)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 2.54)
+          (xy 0 1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.286 1.905)
+          (xy -2.286 -1.905)
+          (xy -2.286 -1.905)
+        )
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.524 0)
+          (xy -0.508 0.381)
+          (xy -0.508 -0.381)
+          (xy -1.524 0)
+        )
+        (stroke (width 0)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0 -1.778)
+          (xy 0.762 -1.778)
+          (xy 0.762 1.778)
+          (xy 0 1.778)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.254 0.508)
+          (xy 0.381 0.381)
+          (xy 1.143 0.381)
+          (xy 1.27 0.254)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0.381)
+          (xy 0.381 -0.254)
+          (xy 1.143 -0.254)
+          (xy 0.762 0.381)
+        )
+        (stroke (width 0)) (fill (type none))
+      )
+      (pin passive line (at 0 -5.08 90) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -7.62 -1.27 0) (length 5.334)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 5.08 270) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)
