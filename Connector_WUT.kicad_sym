@@ -516,7 +516,7 @@
     )
     (symbol "Connector_PMOD_2x6_Peripheral_0_1"
       (rectangle (start -2.54 17.78) (end 2.54 -16.51)
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0)) (fill (type background))
       )
     )
     (symbol "Connector_PMOD_2x6_Peripheral_1_1"
