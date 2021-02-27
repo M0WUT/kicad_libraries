@@ -7105,7 +7105,7 @@
     (property "Value" "WK3IC" (id 1) (at 5.08 -19.05 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (id 2) (at -2.54 2.54 0)
+    (property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (id 2) (at -2.54 2.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at -2.54 2.54 0)
