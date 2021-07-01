@@ -1,5 +1,5 @@
 (footprint "DIN41612_R_03x16_Receptacle_RA_Amphenol_86093488613755E1LF" (version 20210424) (generator pcbnew) (layer "F.Cu")
-  (tedit 60DA0AD3)
+  (tedit 60DE1D69)
   (fp_text reference "REF**" (at 0 -5.25 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp b7cb7785-ef91-4978-b263-5e0f255d13d0)
