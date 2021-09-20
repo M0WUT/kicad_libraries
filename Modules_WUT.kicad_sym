@@ -1040,7 +1040,7 @@
     (property "Value" "Xilinx_Kria_SM-K26-XCL2GC_SOM" (id 1) (at 0 2.54 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (id 2) (at -30.48 -30.48 0)
+    (property "Footprint" "Modules_WUT:Xilinx_Kria_SM-K26-XCL2GC_SOM" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at -30.48 -30.48 0)
