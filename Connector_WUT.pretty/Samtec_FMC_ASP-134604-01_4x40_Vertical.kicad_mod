@@ -1,5 +1,5 @@
 (footprint "Samtec_FMC_ASP-134604-01_4x40_Vertical" (version 20210824) (generator pcbnew) (layer "F.Cu")
-  (tedit 61470C39)
+  (tedit 6148B035)
   (descr "http://www.samtec.com/standards/vita.aspx")
   (tags "FMC LPC VITA ")
   (clearance 0.1)
@@ -369,6 +369,20 @@
   (pad "MNT" thru_hole circle locked (at 2 31.19 90) (size 4 4) (drill 2.7) (layers *.Cu *.Mask)
     (clearance 0.1) (tstamp 2e556d9a-96dd-4175-8c7a-f43c582ec88b))
   (pad "MNT" thru_hole circle locked (at 2 -31.19 90) (size 4 4) (drill 2.7) (layers *.Cu *.Mask) (tstamp d783763a-7306-4f02-af11-36bf1310a127))
+  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp a34c276c-1563-45db-9e1e-67980f465848) (hatch edge 0.508)
+    (connect_pads (clearance 0))
+    (min_thickness 0.254)
+    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints not_allowed))
+    (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 4 25.5)
+        (xy -4 25.5)
+        (xy -4 -25.5)
+        (xy 4 -25.5)
+      )
+    )
+  )
   (model "${WUT_LIBRARIES}/Connector_WUT.3dshapes/Samtec_FMC_ASP-134604-01_4x40_Vertical.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
