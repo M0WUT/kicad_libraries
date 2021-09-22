@@ -1,0 +1,182 @@
+(kicad_symbol_lib (version 20210619) (generator kicad_symbol_editor)
+  (symbol "Power_WUT:12V_FMC" (power) (in_bom no) (on_board no)
+    (property "Reference" "#PWR" (id 0) (at -0.635 -3.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "12V_FMC" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "12V_FMC_0_1"
+      (polyline
+        (pts
+          (xy -1.905 2.54)
+          (xy 1.905 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+    )
+    (symbol "12V_FMC_1_1"
+      (pin power_in line (at 0 0 90) (length 0) hide
+        (name "12V_FMC" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Power_WUT:3V3_AUX" (power) (in_bom no) (on_board no)
+    (property "Reference" "#PWR" (id 0) (at -0.635 -3.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "3V3_AUX" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "3V3_AUX_0_1"
+      (polyline
+        (pts
+          (xy -1.905 2.54)
+          (xy 1.905 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+    )
+    (symbol "3V3_AUX_1_1"
+      (pin power_in line (at 0 0 90) (length 0) hide
+        (name "3V3_AUX" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Power_WUT:3V3_FMC" (power) (in_bom no) (on_board no)
+    (property "Reference" "#PWR" (id 0) (at -0.635 -3.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "3V3_FMC" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "3V3_FMC_0_1"
+      (polyline
+        (pts
+          (xy -1.905 2.54)
+          (xy 1.905 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+    )
+    (symbol "3V3_FMC_1_1"
+      (pin power_in line (at 0 0 90) (length 0) hide
+        (name "3V3_FMC" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Power_WUT:VADJ" (power) (in_bom no) (on_board no)
+    (property "Reference" "#PWR" (id 0) (at -0.635 -3.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VADJ" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "VADJ_0_1"
+      (polyline
+        (pts
+          (xy -1.905 2.54)
+          (xy 1.905 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+    )
+    (symbol "VADJ_1_1"
+      (pin power_in line (at 0 0 90) (length 0) hide
+        (name "VADJ" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Power_WUT:VADJ_FMC" (power) (in_bom no) (on_board no)
+    (property "Reference" "#PWR" (id 0) (at -0.635 -3.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VADJ_FMC" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "VADJ_FMC_0_1"
+      (polyline
+        (pts
+          (xy -1.905 2.54)
+          (xy 1.905 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 2.54)
+        )
+        (stroke (width 0.1524)) (fill (type none))
+      )
+    )
+    (symbol "VADJ_FMC_1_1"
+      (pin power_in line (at 0 0 90) (length 0) hide
+        (name "VADJ_FMC" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)
