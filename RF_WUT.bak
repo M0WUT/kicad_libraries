@@ -354,7 +354,7 @@
     (property "Value" "RFSA3413" (id 1) (at 7.62 -29.21 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" (id 2) (at 0 0 0)
+    (property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm_ThermalVias" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/412/RFSA3413_Data_Sheet-1506844.pdf" (id 3) (at 0 0 0)
