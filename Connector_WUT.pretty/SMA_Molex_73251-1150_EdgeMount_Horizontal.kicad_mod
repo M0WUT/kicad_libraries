@@ -1,4 +1,5 @@
-(footprint "SMA_Molex_73251-1150_EdgeMount_Horizontal" (version 20210424) (generator pcbnew) (layer "F.Cu")
+(footprint "SMA_Molex_73251-1150_EdgeMount_Horizontal" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
   (tedit 60C271C3)
   (attr smd)
   (fp_text reference "REF**" (at 8.25 0) (layer "F.SilkS")
@@ -9,6 +10,8 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 1e931c03-f0aa-4563-a58c-a31549d683b0)
   )
+  (fp_line (start 1 6) (end 5 6) (layer "F.SilkS") (width 0.12) (tstamp 0bfcfe4b-7fb6-4b6c-b3c5-f04909e4291d))
+  (fp_line (start 5 -6) (end 1 -6) (layer "F.SilkS") (width 0.12) (tstamp 4e5155e6-be1d-4104-976d-97c9fc8384e4))
   (fp_line (start -10 7) (end -10 -7) (layer "B.CrtYd") (width 0.12) (tstamp 808b9374-e8e4-42ec-a7df-53825eb24909))
   (fp_line (start -10 -7) (end 6 -7) (layer "B.CrtYd") (width 0.12) (tstamp 945479ab-efcf-423e-a77d-18710172dc2d))
   (fp_line (start 6 7) (end -10 7) (layer "B.CrtYd") (width 0.12) (tstamp af9a4eb1-796a-4188-97a4-9222cacd2c40))
@@ -44,7 +47,7 @@
   (pad "2" smd rect (at 3.04 -4.3825) (size 4.08 2.415) (layers "B.Cu" "B.Mask") (tstamp 87c748e0-5335-4388-9f97-7b4e57b0c985))
   (pad "2" smd rect (at 3.04 4.3825) (size 4.08 2.415) (layers "F.Cu" "F.Mask") (tstamp bcd96db5-cb7d-4d75-9416-ed01008cf3ee))
   (pad "2" smd rect (at 3.04 -4.3825) (size 4.08 2.415) (layers "F.Cu" "F.Mask") (tstamp d0c75636-6c3e-4724-909b-110b7bffed0d))
-  (model "${KILOCAL}/Connector_WUT.3dshapes/SMA_Molex_73251-1150_EdgeMount_Horizontal.stp"
+  (model "${WUT_LIBRARIES}/Connector_WUT.3dshapes/SMA_Molex_73251-1150_EdgeMount_Horizontal.stp"
     (offset (xyz -9.5 0 0.38))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

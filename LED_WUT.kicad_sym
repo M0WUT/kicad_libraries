@@ -1,5 +1,5 @@
-(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
-  (symbol "LED_WUT:Kingbright_WP130WCP_2EGW" (in_bom yes) (on_board yes)
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "Kingbright_WP130WCP_2EGW" (in_bom yes) (on_board yes)
     (property "Reference" "LD" (id 0) (at 0 15.24 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -30,82 +30,101 @@
       )
     )
     (symbol "Kingbright_WP130WCP_2EGW_0_1"
-      (circle (center -2.54 -6.35) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
-      (circle (center -2.54 6.35) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
-      (circle (center 0 -6.35) (radius 4.572) (stroke (width 0.254)) (fill (type background)))
-      (circle (center 0 6.35) (radius 4.572) (stroke (width 0.254)) (fill (type background)))
       (rectangle (start -5.08 13.97) (end 5.08 -12.7)
-        (stroke (width 0.1524)) (fill (type background))
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (circle (center -2.54 -6.35) (radius 0.2794)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center -2.54 6.35) (radius 0.2794)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center 0 -6.35) (radius 4.572)
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type background))
       )
       (polyline
         (pts
           (xy -4.572 -6.35)
           (xy -2.54 -6.35)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -4.572 6.35)
           (xy -2.54 6.35)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 -7.62)
           (xy -1.27 -10.16)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 -5.08)
           (xy -1.27 -2.54)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 5.08)
           (xy -1.27 2.54)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 7.62)
           (xy -1.27 10.16)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 -8.89)
           (xy 1.905 -8.89)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 -3.81)
           (xy 1.905 -3.81)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 3.81)
           (xy 1.905 3.81)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 8.89)
           (xy 1.905 8.89)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -114,7 +133,8 @@
           (xy -1.27 -8.89)
           (xy 1.27 -10.16)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -123,7 +143,8 @@
           (xy -1.27 -3.81)
           (xy 1.27 -5.08)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -132,7 +153,8 @@
           (xy -1.27 3.81)
           (xy 1.27 2.54)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -141,7 +163,8 @@
           (xy -1.27 8.89)
           (xy 1.27 7.62)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -150,7 +173,8 @@
           (xy -2.54 -8.89)
           (xy 2.032 -8.89)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -159,7 +183,8 @@
           (xy -2.54 3.81)
           (xy 2.032 3.81)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -169,7 +194,8 @@
           (xy 3.556 0.254)
           (xy 3.556 -0.508)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -179,7 +205,8 @@
           (xy 3.556 12.954)
           (xy 3.556 12.192)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -189,7 +216,8 @@
           (xy 4.826 -0.762)
           (xy 4.826 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -199,7 +227,12 @@
           (xy 4.826 11.938)
           (xy 4.826 11.176)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 0 6.35) (radius 4.572)
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type background))
       )
     )
     (symbol "Kingbright_WP130WCP_2EGW_1_1"
@@ -229,14 +262,14 @@
       )
     )
   )
-  (symbol "LED_WUT:LED_Cree_CLX6E-FKC" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+  (symbol "LED_Cree_CLX6E-FKC" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
     (property "Reference" "LD" (id 0) (at 2.54 -2.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED_Cree_CLX6E-FKC" (id 1) (at 0 8.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "LED_SMD:LED_RGB_PLCC-6" (id 2) (at 0 0 0)
+    (property "Footprint" "LED_WUT:LED_Cree_CLX6E-FKC" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" (id 3) (at 0 0 0)
@@ -256,14 +289,16 @@
           (xy -1.27 -1.27)
           (xy -1.27 1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 0)
           (xy 1.27 0)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -272,7 +307,8 @@
           (xy -1.27 0)
           (xy 1.27 -1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -282,7 +318,8 @@
           (xy -4.572 -2.286)
           (xy -4.572 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -292,7 +329,8 @@
           (xy -3.302 -2.286)
           (xy -3.302 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (pin passive line (at -3.81 0 0) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
@@ -304,22 +342,21 @@
       )
     )
     (symbol "LED_Cree_CLX6E-FKC_2_1"
-      (text "Green" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
       (polyline
         (pts
           (xy -1.27 -1.27)
           (xy -1.27 1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 0)
           (xy 1.27 0)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -328,7 +365,8 @@
           (xy -1.27 0)
           (xy 1.27 -1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -338,7 +376,8 @@
           (xy -4.572 -2.286)
           (xy -4.572 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -348,7 +387,11 @@
           (xy -3.302 -2.286)
           (xy -3.302 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (text "Green" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
       )
       (pin passive line (at -3.81 0 0) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
@@ -360,22 +403,21 @@
       )
     )
     (symbol "LED_Cree_CLX6E-FKC_3_1"
-      (text "Red" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
       (polyline
         (pts
           (xy -1.27 -1.27)
           (xy -1.27 1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 0)
           (xy 1.27 0)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -384,7 +426,8 @@
           (xy -1.27 0)
           (xy 1.27 -1.27)
         )
-        (stroke (width 0.2032)) (fill (type none))
+        (stroke (width 0.2032) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -394,7 +437,8 @@
           (xy -4.572 -2.286)
           (xy -4.572 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -404,7 +448,11 @@
           (xy -3.302 -2.286)
           (xy -3.302 -1.524)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (text "Red" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
       )
       (pin passive line (at -3.81 0 0) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
@@ -416,7 +464,7 @@
       )
     )
   )
-  (symbol "LED_WUT:LED_Dialight_553-0112F" (in_bom yes) (on_board yes)
+  (symbol "LED_Dialight_553-0112F" (in_bom yes) (on_board yes)
     (property "Reference" "LD" (id 0) (at 0 7.62 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -438,48 +486,53 @@
       )
     )
     (symbol "LED_Dialight_553-0112F_0_1"
-      (circle (center 0 0) (radius 4.572) (stroke (width 0.254)) (fill (type background)))
       (polyline
         (pts
           (xy -5.08 -2.54)
           (xy 2.032 -2.54)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -5.08 2.54)
           (xy 2.032 2.54)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 -1.27)
           (xy -1.27 -3.81)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy -1.27 3.81)
           (xy -1.27 1.27)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 -2.54)
           (xy 1.905 -2.54)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
           (xy 3.81 2.54)
           (xy 1.905 2.54)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -488,7 +541,8 @@
           (xy -1.27 -2.54)
           (xy 1.27 -1.27)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -497,7 +551,8 @@
           (xy -1.27 2.54)
           (xy 1.27 3.81)
         )
-        (stroke (width 0.254)) (fill (type none))
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -507,7 +562,8 @@
           (xy 3.556 6.604)
           (xy 3.556 5.842)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
       (polyline
         (pts
@@ -517,7 +573,12 @@
           (xy 4.826 5.588)
           (xy 4.826 4.826)
         )
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 0 0) (radius 4.572)
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type background))
       )
     )
     (symbol "LED_Dialight_553-0112F_1_1"

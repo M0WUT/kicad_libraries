@@ -1,4 +1,5 @@
-(footprint "LED_Cree_CLX6E-FKC" (version 20201220) (generator pcbnew) (layer "F.Cu")
+(footprint "LED_Cree_CLX6E-FKC" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
   (tedit 5FF0614C)
   (descr "RGB LED PLCC-6")
   (tags "RGB LED PLCC-6")
