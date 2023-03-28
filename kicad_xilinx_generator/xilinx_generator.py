@@ -5,7 +5,7 @@ from dataclasses import dataclass
 banks = {}
 
 
-    
+FILE_NAME = "xc7z015clg485.txt"
 
 @dataclass(frozen=True)
 class Pin:
@@ -48,7 +48,7 @@ def write_header(output_file, part_number):
 
 
 number_of_pins = 0
-with open("input.txt", 'r') as file:
+with open(FILE_NAME, 'r') as file:
     for line in file:
         line = line.strip()
         if line:
