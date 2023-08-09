@@ -1,11 +1,11 @@
-(footprint "Wurth_WCAP_PSHP_8x8.7mm_SM" (version 20221018) (generator pcbnew)
+(footprint "Wurth_WCAP_PSHP_8x7.7mm_SM" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (attr through_hole)
   (fp_text reference "REF**" (at 0 -6) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 69b06f61-8f15-452d-b3e0-28363d9b7ed9)
   )
-  (fp_text value "Wurth_WCAP_PSHP_8x8.7mm_SM" (at 0 -0.5) (layer "F.Fab")
+  (fp_text value "Wurth_WCAP_PSHP_8x7.7mm_SM" (at 0 -0.5) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 96305a2c-8c64-446d-9c89-5cb46c5be824)
   )
@@ -49,7 +49,7 @@
     (stroke (width 0.12) (type solid)) (fill none) (layer "F.Fab") (tstamp dd126ee6-5993-4924-9b9d-a34896d55ee2))
   (pad "1" smd rect (at 3.5 0) (size 4.2 1.9) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a32d0a40-8ab4-4b66-9171-99190bb3dccc))
   (pad "2" smd rect (at -3.5 0) (size 4.2 1.9) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 16eb914f-6c8c-4bd6-a8f8-470a743a86bf))
-  (model ":WUT_LIBRARIES:Capacitor_WUT.3dshapes/Wurth_WCAP-PSHP_8x8.7MM_sm.step"
+  (model "${WUT_LIBRARIES}/Capacitor_WUT.3dshapes/Wurth_WCAP_PSHP_8x7.7mm_SM.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
