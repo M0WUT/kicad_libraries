@@ -4281,7 +4281,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "TE Connectivity" (at 0 0 0)
-      (effects (font (size 1.27 1.27)))
+      (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_keywords" "D-sub" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
