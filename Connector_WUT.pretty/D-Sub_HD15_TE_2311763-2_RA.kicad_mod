@@ -43,8 +43,8 @@
   (pad "13" thru_hole circle (at -0.25 2.54) (size 1.7 1.7) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp 19e1a817-ab2d-48df-8630-e94baabe0329))
   (pad "14" thru_hole circle (at -2.54 2.54) (size 1.7 1.7) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp 3d7cf12c-78dc-4254-9fcb-48591cb8501f))
   (pad "15" thru_hole circle (at -4.83 2.54) (size 1.7 1.7) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp 444117f7-bc44-4531-b6a5-feeb7011c8af))
-  (pad "MNT" thru_hole circle (at -12.5 0) (size 5 5) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp 483e2c75-bad0-4d8d-9209-c4e742006941))
-  (pad "MNT" thru_hole circle (at 12.5 0) (size 5 5) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp 55207dc0-7cc6-4754-92b5-e12365dd0f23))
+  (pad "MNT1" thru_hole circle (at -12.5 0) (size 5 5) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp 483e2c75-bad0-4d8d-9209-c4e742006941))
+  (pad "MNT2" thru_hole circle (at 12.5 0) (size 5 5) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp 55207dc0-7cc6-4754-92b5-e12365dd0f23))
   (model "${WUT_LIBRARIES}/Connector_WUT.3dshapes/D-Sub_HD15_TE_2311763-2_RA.step"
     (offset (xyz 0 -17.43 6.3))
     (scale (xyz 1 1 1))
