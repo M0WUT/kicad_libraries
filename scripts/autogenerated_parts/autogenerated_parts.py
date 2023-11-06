@@ -919,6 +919,121 @@ def add_cm_choke(
     )
 
 
+def add_base_tvs_uni(library):
+    library.write(
+        """  (symbol "TVS_Uni" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "TVS_Uni_0_1"
+      (polyline
+        (pts
+          (xy -1.27 0)
+          (xy 1.27 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -1.27)
+          (xy 1.27 1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -1.27)
+          (xy -1.27 1.27)
+          (xy 1.27 0)
+          (xy -1.27 -1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+    )
+    (symbol "TVS_Uni_1_1"
+      (polyline
+        (pts
+          (xy 1.27 -1.27)
+          (xy 1.778 -1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 1.27)
+          (xy 0.762 1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (pin passive line (at 3.81 0 180) (length 2.54)
+        (name "K" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -3.81 0 0) (length 2.54)
+        (name "A" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )"""
+    )
+
+
+def add_tvs_uni(
+    library,
+    manufacturer,
+    mpn,
+    value,
+    package_description,
+    footprint,
+    height,
+    datasheet,
+):
+    library.write(
+        f"""
+  (symbol "{manufacturer} {mpn}" (extends "TVS_Uni")
+    (property "Reference" "D" (at 2.54 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "{value}" (at 2.54 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "{footprint}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "{datasheet}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "{manufacturer}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "{mpn}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Height" "{height}mm" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "{value} {package_description} TVS Diode" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+"""
+    )
+
+
 with open(OUTPUT_FILE, "w+") as library:
     workbook = openpyxl.load_workbook(SOURCE_FILE)
     worksheet = workbook.active
@@ -933,6 +1048,7 @@ with open(OUTPUT_FILE, "w+") as library:
     add_base_resistor(library)
     add_base_ferrite_bead(library)
     add_base_cm_choke(library)
+    add_base_tvs_uni(library)
 
     for line in worksheet.values:
         (
@@ -1059,6 +1175,17 @@ with open(OUTPUT_FILE, "w+") as library:
                 footprint=footprint,
                 height=height,
                 rated_current=rated_current,
+                datasheet=datasheet,
+            )
+        elif base_symbol == "TVS_Uni":
+            add_tvs_uni(
+                library=library,
+                manufacturer=manufacturer,
+                mpn=mpn,
+                value=value,
+                package_description=package_description,
+                footprint=footprint,
+                height=height,
                 datasheet=datasheet,
             )
 
