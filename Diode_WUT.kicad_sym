@@ -48,7 +48,7 @@
         (name "RUP2" (effects (font (size 1.27 1.27))))
         (number "12" (effects (font (size 1.27 1.27))))
       )
-      (pin passive line (at 2.8273 15.3203 270) (length 2.54)
+      (pin passive line (at 2.54 15.24 270) (length 2.54)
         (name "RUP3" (effects (font (size 1.27 1.27))))
         (number "13" (effects (font (size 1.27 1.27))))
       )
