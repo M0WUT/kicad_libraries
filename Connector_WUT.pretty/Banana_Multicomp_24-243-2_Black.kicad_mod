@@ -29,11 +29,6 @@
     (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 480cb434-fd9c-4b48-b968-6a43f44c4819))
   (pad "1" thru_hole circle (at 0 0) (size 2.5 2.5) (drill 1.5) (layers "*.Cu" "*.Mask") (tstamp af447c21-a7e1-4980-8c73-a6982358d18f))
   (pad "1" thru_hole circle (at 0 15.5 90) (size 3 3) (drill 1.8) (layers "*.Cu" "*.Mask") (tstamp ea172a96-9009-4c4c-b35f-ed89846b283d))
-  (model ":WUT_LIBRARIES:Connector_WUT.3dshapes/Banana_Multicomp_24.243.step"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 180))
-  )
   (model ":WUT_LIBRARIES:Connector_WUT.3dshapes/Banana_Multicomp_24-243-2.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))

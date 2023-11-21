@@ -98,8 +98,8 @@
   (pad "c14" thru_hole circle (at -13.97 -2.54) (size 1.524 1.524) (drill 1) (layers "*.Cu" "*.Mask") (tstamp ee7cfecb-130e-457c-8c93-d935063442fb))
   (pad "c15" thru_hole circle (at -16.51 -2.54) (size 1.524 1.524) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 25d4d00c-a6f6-4025-8fcd-cbc1eecf752e))
   (pad "c16" thru_hole circle (at -19.05 -2.54) (size 1.524 1.524) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 87262a56-00dd-4d54-9760-1ebf0255ba60))
-  (model "${WUT_LIBRARIES}/Connector_WUT.3dshapes/Amphenol_DIN41612_R_03x16_Receptacle_RA_ 86093488613755E1LF.step"
-    (offset (xyz 23.86 0.58 11.6))
+  (model ":WUT_LIBRARIES:Connector_WUT.3dshapes/Amphenol_DIN41612_R_03x16_Receptacle_RA_ 86093488613755E1LF.step"
+    (offset (xyz 23.86 0.58 11.63))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))
   )
