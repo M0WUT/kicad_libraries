@@ -114,7 +114,7 @@
     )
   )
   (model ":WUT_LIBRARIES:Connector_WUT.3dshapes/Amphenol_U77-A1114-30L1.STEP"
-    (offset (xyz -30.9 0 0))
+    (offset (xyz -31 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
   )
