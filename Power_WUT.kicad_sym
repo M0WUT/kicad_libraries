@@ -688,7 +688,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 0 3.81 0)
-      (effects (font (size 1.27 1.27)))
+      (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
