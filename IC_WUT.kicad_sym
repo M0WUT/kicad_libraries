@@ -2603,7 +2603,7 @@
     (property "Value" "INA3221AIRGV" (at 5.08 -29.21 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "IC_WUT:Texas_VFQN-16-1EP_RGV0016A" (at -10.16 -17.78 0)
+    (property "Footprint" "IC_WUT:Texas_VQFN-16-1EP_RGV0016A" (at -10.16 -17.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina3221.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1701710172007&ref_url=https%253A%252F%252Fwww.mouser.co.cr%252F" (at -10.16 -17.78 0)
