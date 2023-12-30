@@ -72,9 +72,9 @@
   (fp_circle (center 0 0) (end 0 -4)
     (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") (tstamp d4bbaf64-8e07-418a-9b93-6b47f817b6dc))
   (pad "1" smd rect (at 3.5 0) (size 4.2 1.9) (layers "F.Cu" "F.Paste" "F.Mask")
-    (thermal_bridge_angle 45) (tstamp fe725298-36ce-47c6-b7f8-67f19a74201e))
+    (thermal_bridge_angle 0) (tstamp fe725298-36ce-47c6-b7f8-67f19a74201e))
   (pad "2" smd rect (at -3.5 0) (size 4.2 1.9) (layers "F.Cu" "F.Paste" "F.Mask")
-    (thermal_bridge_angle 45) (tstamp caeea287-44b1-4b28-9ce4-4a4f19765866))
+    (thermal_bridge_angle 0) (tstamp caeea287-44b1-4b28-9ce4-4a4f19765866))
   (model ":WUT_LIBRARIES:Capacitor_WUT.3dshapes/Wurth_WCAP-HSG5_8x10.5mm_SM.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
