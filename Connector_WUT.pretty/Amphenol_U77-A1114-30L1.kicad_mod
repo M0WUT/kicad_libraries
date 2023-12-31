@@ -91,7 +91,7 @@
   (pad "1" thru_hole circle (at 6.2 -4.8) (size 1.5 1.5) (drill 0.95) (layers "*.Cu" "*.Mask") (tstamp e6710b71-15a9-41d5-b57b-6fd19239824e))
   (pad "1" thru_hole circle (at 6.2 0) (size 1.5 1.5) (drill 0.95) (layers "*.Cu" "*.Mask") (tstamp b70b5007-03f2-4eec-80cf-f5c97f9c25b8))
   (pad "1" thru_hole circle (at 6.2 4.8) (size 1.5 1.5) (drill 0.95) (layers "*.Cu" "*.Mask") (tstamp 9b758850-5591-4747-af81-12ad23b3605b))
-  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp ee0f2d35-0478-49c7-94a1-b303e0bca9e3) (hatch full 0.508)
+  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp ee0f2d35-0478-49c7-94a1-b303e0bca9e3) (name "Keepout_SFP") (hatch full 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254) (filled_areas_thickness no)
     (keepout (tracks not_allowed) (vias allowed) (pads allowed) (copperpour allowed) (footprints not_allowed))
