@@ -977,6 +977,12 @@
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Manufacturer" "ST" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "USBLC6-2M6" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "USBLC6-2M6_0_1"
       (rectangle (start -3.048 3.048) (end 3.048 -3.048)
         (stroke (width 0.254) (type default))

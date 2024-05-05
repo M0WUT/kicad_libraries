@@ -964,11 +964,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (symbol "USBLC6-2M6" (in_bom yes) (on_board yes)
+  (symbol "USBULC6-2M6" (in_bom yes) (on_board yes)
     (property "Reference" "D" (at 1.905 4.445 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "USBLC6-2M6" (at 7.62 -4.445 0)
+    (property "Value" "USBULC6-2M6" (at 7.62 -4.445 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Diode_WUT:TVS_ST_USBLC6-2M6" (at 0 0 0)
@@ -977,7 +977,13 @@
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "USBLC6-2M6_0_1"
+    (property "Manufacturer" "ST" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "USBULC6-2M6" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "USBULC6-2M6_0_1"
       (rectangle (start -3.048 3.048) (end 3.048 -3.048)
         (stroke (width 0.254) (type default))
         (fill (type background))
@@ -1259,7 +1265,7 @@
         (fill (type none))
       )
     )
-    (symbol "USBLC6-2M6_1_1"
+    (symbol "USBULC6-2M6_1_1"
       (pin passive line (at -5.08 0 0) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))

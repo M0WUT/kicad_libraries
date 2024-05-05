@@ -9119,6 +9119,12 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv7031.pdf" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Manufacturer" "Texas Instruments" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "TLV7031DCK" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "TLV7031DCK_1_1"
       (polyline
         (pts
