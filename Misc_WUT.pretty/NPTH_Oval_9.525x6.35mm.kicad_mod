@@ -1,0 +1,78 @@
+(footprint "NPTH_Oval_9.525x6.35mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "39fecc78-528e-4353-9c5d-a0c89aac3528")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "NPTH_Oval_9.525x6.35mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b8b20b0f-7fb6-479e-8267-06a4025af69d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e375a1e6-d294-4484-9492-bbf0a0cc886f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "19\" rack mounting hole"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35647f4e-7120-4e12-a204-ebf6fe9fb404")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e96ebc17-4f5c-42ca-86e4-60e292250c70")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole oval
+		(at 0 0)
+		(size 9.525 6.35)
+		(drill oval 9.525 6.35)
+		(layers "F&B.Cu" "*.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "642fb844-c1b4-4581-97c7-abec1f9397ba")
+	)
+	(embedded_fonts no)
+)
