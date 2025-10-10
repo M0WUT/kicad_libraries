@@ -1,7 +1,7 @@
 (footprint "Foshan_BC1010RGBT-HG"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -1.5 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7c9f1dae-04ff-4a25-9617-5ec8c938dde8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d3a98dfa-36b1-4cd5-8a4b-1b0a2bfefa58")
 		(effects
 			(font
 				(size 1 1)
@@ -74,7 +61,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "1ead4f8f-227a-413d-98ed-2dc8b2fcf4f7")
 	)
@@ -85,7 +72,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "42a2068c-3aa2-47f3-9b7d-c86a73f36e25")
 	)
@@ -96,7 +83,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "74375b27-c33a-4121-be13-9d7850938a46")
 	)
@@ -115,29 +102,45 @@
 	(pad "1" smd rect
 		(at 0.385 -0.385)
 		(size 0.45 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0.05)
 		(thermal_bridge_angle 45)
 		(uuid "9c8d081f-d228-4a6e-9509-8814fade781c")
 	)
 	(pad "2" smd rect
 		(at 0.385 0.385)
 		(size 0.45 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0.05)
 		(thermal_bridge_angle 45)
 		(uuid "8eddf3f1-24fb-4409-aae4-02f040609995")
 	)
 	(pad "3" smd rect
 		(at -0.385 0.385)
 		(size 0.45 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0.05)
 		(thermal_bridge_angle 45)
 		(uuid "af9ac042-8603-42e5-ad75-d1b415b0d9b5")
 	)
 	(pad "4" smd rect
 		(at -0.385 -0.385)
 		(size 0.45 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0.05)
 		(thermal_bridge_angle 45)
 		(uuid "1edbfd4f-06b8-41b4-a6ff-a506dcf08f93")
+	)
+	(embedded_fonts no)
+	(model "${WUT_LIBRARIES}/LED_WUT.3dshapes/Foshan_BC1010RGBT-HG.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
 	)
 )

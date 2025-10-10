@@ -1,0 +1,211 @@
+(footprint "USB-A_Wurth_614104150121_TH_RA"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "da699436-7496-49fc-8ea8-9b855fb0d57f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USB-A_Wurth_614104150121_TH_RA"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7731a072-270f-403e-b9b1-0167102dd48c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/614104150121.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce77e4e7-1073-4e44-887f-42564a9b2881")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "TH RA USB A connector"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f65e602-ed58-42ac-9132-41cb97f7c282")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -7.5 -0.25)
+		(end -4.75 -0.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0fb76377-26b9-467e-9aee-8db147470e2f")
+	)
+	(fp_line
+		(start -7.5 9.25)
+		(end -7.5 -0.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9d1cf59b-5bb5-4588-a917-bfc5410ab49d")
+	)
+	(fp_line
+		(start -4.75 -1)
+		(end 4.75 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d13ed964-d0e3-4301-9a8d-c0e76c3504f8")
+	)
+	(fp_line
+		(start -4.75 -0.25)
+		(end -4.75 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8a25be0c-44a5-4547-89d1-3d467b039db3")
+	)
+	(fp_line
+		(start 4.75 -1)
+		(end 4.75 -0.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9b44a4aa-050e-4a71-86e3-3c3659bc7c3d")
+	)
+	(fp_line
+		(start 4.75 -0.25)
+		(end 7.5 -0.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b870ce6e-b7fa-4d8b-aae7-fdacdce6f173")
+	)
+	(fp_line
+		(start 7.5 -0.25)
+		(end 7.5 9.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "60bc304c-4eea-44ee-954e-01b8e2c3fea4")
+	)
+	(fp_rect
+		(start -7.75 -1.25)
+		(end 7.75 10.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "13a7fb4c-539f-4443-84e4-74105c7ab474")
+	)
+	(fp_rect
+		(start -7.3 0)
+		(end 7.3 10)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "aaaa9772-5f41-49da-9a2b-44458feee4aa")
+	)
+	(pad "1" thru_hole circle
+		(at -3.5 0)
+		(size 1.5 1.5)
+		(drill 0.92)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "962b975c-3b8c-4554-8d02-6a14be203f55")
+	)
+	(pad "2" thru_hole circle
+		(at -1 0)
+		(size 1.5 1.5)
+		(drill 0.92)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "03f3adc1-3009-436e-a5c4-a84a2d896c15")
+	)
+	(pad "3" thru_hole circle
+		(at 1 0)
+		(size 1.5 1.5)
+		(drill 0.92)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c7175324-7f7a-47d7-9ec0-7dfd4ee482fb")
+	)
+	(pad "4" thru_hole circle
+		(at 3.5 0)
+		(size 1.5 1.5)
+		(drill 0.92)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b94e3838-672f-47bb-b2ba-66da847fd73d")
+	)
+	(pad "5" thru_hole oval
+		(at -6.4 7.35)
+		(size 1.2 3)
+		(drill oval 0.4 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "74b1737b-7c74-45e6-a6de-013a732d8b8d")
+	)
+	(pad "5" thru_hole oval
+		(at 6.4 7.35)
+		(size 1.2 3)
+		(drill oval 0.4 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "cbc74aec-d58e-4659-9b33-bc2c72afc89f")
+	)
+	(embedded_fonts no)
+	(model "${WUT_LIBRARIES}/Connector_WUT.3dshapes/USB-A_Wurth_614104150121_TH_RA.igs"
+		(offset
+			(xyz 0 -1.05 3.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
