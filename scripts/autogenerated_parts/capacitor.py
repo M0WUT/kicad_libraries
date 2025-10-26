@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_capacitor(library):
-    library.write(
-        """  (symbol "C" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+
+def add_base_capacitor():
+    return """  (symbol "C" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
     (property "Reference" "C" (at 2.54 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -50,11 +51,9 @@ def add_base_capacitor(library):
     )
   )
 """
-    )
 
 
 def add_capacitor(
-    library,
     manufacturer,
     mpn,
     value,
@@ -66,8 +65,7 @@ def add_capacitor(
     voltage,
     dielectric,
 ):
-    library.write(
-        f"""
+    return f"""
   (symbol "{manufacturer} {mpn}" (extends "C")
     (property "Reference" "C" (at 2.54 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -99,17 +97,15 @@ def add_capacitor(
     (property "Height" "{height}mm" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "{value} +-{tolerance} {voltage} {package_description} {dielectric} Capacitor" (at 0 0 0)
+    (property "ki_description" "{value} {tolerance} {voltage} {package_description} {dielectric} Capacitor" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
 """
-    )
 
 
-def add_base_polarised_capacitor(library):
-    library.write(
-        """  (symbol "C_Pol" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+def add_base_polarised_capacitor():
+    return """  (symbol "C_Pol" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "C" (at 2.54 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -169,11 +165,9 @@ def add_base_polarised_capacitor(library):
     )
   )
   """
-    )
 
 
 def add_polarised_capacitor(
-    library,
     manufacturer,
     mpn,
     value,
@@ -185,8 +179,7 @@ def add_polarised_capacitor(
     voltage,
     dielectric,
 ):
-    library.write(
-        f"""  (symbol "{manufacturer}_{mpn}" (extends "C_Pol")
+    return f"""  (symbol "{manufacturer}_{mpn}" (extends "C_Pol")
     (property "Reference" "C" (at 2.54 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -217,66 +210,71 @@ def add_polarised_capacitor(
     (property "Height" "{height}mm" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "{value} +-{tolerance} {voltage} {package_description} {dielectric} Capacitor" (at 0 0 0)
+    (property "ki_description" "{value} {tolerance} {voltage} {package_description} {dielectric} Capacitor" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
   """
-    )
 
 
 def add_capacitors(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "capacitor_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_capacitor_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_capacitor(lib)
-            add_base_polarised_capacitor(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            value,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            tolerance,
-            datasheet,
-            polarised,
-            voltage,
-            dielectric,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
-            if polarised:
+    for (
+        manufacturer,
+        mpn,
+        value,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        tolerance,
+        datasheet,
+        polarised,
+        voltage,
+        dielectric,
+    ) in worksheet_values:
+        if manufacturer == "Manufacturer":
+            continue
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if polarised == "Y":
+            target_str_list.append(
                 add_polarised_capacitor(
-                    pref_lib if preferred == "Y" else std_lib,
                     manufacturer,
                     mpn,
                     value,
                     package_description,
                     footprint,
-                    tolerance,
                     height,
+                    tolerance,
                     datasheet,
                     voltage,
                     dielectric,
                 )
-            else:
+            )
+        else:
+            target_str_list.append(
                 add_capacitor(
-                    pref_lib if preferred == "Y" else std_lib,
                     manufacturer,
                     mpn,
                     value,
                     package_description,
                     footprint,
-                    tolerance,
                     height,
+                    tolerance,
                     datasheet,
                     voltage,
                     dielectric,
                 )
+            )
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_capacitor() + add_base_polarised_capacitor(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )

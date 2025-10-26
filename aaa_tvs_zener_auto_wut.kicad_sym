@@ -1,3 +1,4 @@
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
   (symbol "TVS_Uni" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "D" (at 0 2.54 0)
       (effects (font (size 1.27 1.27)))
@@ -178,3 +179,4 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
+)

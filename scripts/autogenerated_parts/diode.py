@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_normal_diode(library):
-    library.write(
-        """  (symbol "D" (pin_names hide) (in_bom yes) (on_board yes)
+
+def add_base_normal_diode():
+    return """  (symbol "D" (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "D" (at 0 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)))
     )
@@ -61,12 +62,11 @@ def add_base_normal_diode(library):
         (number "2" (effects (font (size 1.27 1.27))))
       )
     )
-  )"""
-    )
+  )
+  """
 
 
 def add_normal_diode(
-    library,
     manufacturer,
     mpn,
     package_description,
@@ -75,8 +75,7 @@ def add_normal_diode(
     datasheet,
     rated_current,
 ):
-    library.write(
-        f"""
+    return f"""
   (symbol "{manufacturer} {mpn}" (extends "D")
     (property "Reference" "D" (at 2.54 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -104,35 +103,33 @@ def add_normal_diode(
     )
   )
 """
-    )
 
 
 def add_diodes(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "diode_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_diode_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_normal_diode(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            datasheet,
-            rated_current,
-            type,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
-            if type == "Normal":
+    for (
+        manufacturer,
+        mpn,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        datasheet,
+        rated_current,
+        type,
+    ) in worksheet_values:
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if manufacturer == "Manufacturer":
+            continue
+
+        if type == "Normal":
+            target_str_list.append(
                 add_normal_diode(
-                    pref_lib if preferred == "Y" else std_lib,
                     manufacturer,
                     mpn,
                     package_description,
@@ -141,5 +138,14 @@ def add_diodes(library_dir: Path, worksheet_values: Generator):
                     datasheet,
                     rated_current,
                 )
-            else:
-                raise NotImplementedError(f"Unsupported Diode type: {type}")
+            )
+        else:
+            raise NotImplementedError(f"Unsupported Diode type: {type}")
+
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_normal_diode(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )

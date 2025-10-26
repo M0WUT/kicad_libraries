@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_ferrite_bead(library):
-    library.write(
-        """  (symbol "FB" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+
+def add_base_ferrite_bead():
+    return """  (symbol "FB" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "FB" (at 0 2.921 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -57,11 +58,9 @@ def add_base_ferrite_bead(library):
       )
     )
   )"""
-    )
 
 
 def add_ferrite_bead(
-    library,
     manufacturer,
     mpn,
     value,
@@ -71,8 +70,7 @@ def add_ferrite_bead(
     datasheet,
     rated_current,
 ):
-    library.write(
-        f"""    
+    return f"""    
   (symbol "{manufacturer} {mpn}" (extends "FB")
     (property "Reference" "FB" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -102,34 +100,31 @@ def add_ferrite_bead(
       (effects (font (size 1.27 1.27)) hide)
     )
   )"""
-    )
 
 
 def add_ferrite_beads(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "ferrite_bead_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_ferrite_bead_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_ferrite_bead(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            value,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            datasheet,
-            rated_current,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
+    for (
+        manufacturer,
+        mpn,
+        value,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        datasheet,
+        rated_current,
+    ) in worksheet_values:
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if manufacturer == "Manufacturer":
+            continue
+        target_str_list.append(
             add_ferrite_bead(
-                pref_lib if preferred == "Y" else std_lib,
                 manufacturer,
                 mpn,
                 value,
@@ -139,3 +134,11 @@ def add_ferrite_beads(library_dir: Path, worksheet_values: Generator):
                 datasheet,
                 rated_current,
             )
+        )
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_ferrite_bead(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )

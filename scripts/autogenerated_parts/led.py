@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_led(library):
-    library.write(
-        """  (symbol "LED" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+
+def add_base_led():
+    return """  (symbol "LED" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "LD" (at 0 2.54 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -78,11 +79,9 @@ def add_base_led(library):
       )
     )
   )"""
-    )
 
 
 def add_led(
-    library,
     manufacturer,
     mpn,
     value,
@@ -91,8 +90,7 @@ def add_led(
     height,
     datasheet,
 ):
-    library.write(
-        f"""  (symbol "{manufacturer}_{mpn}" (extends "LED")
+    return f"""  (symbol "{manufacturer}_{mpn}" (extends "LED")
     (property "Reference" "LD" (at 0 2.54 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -118,33 +116,30 @@ def add_led(
       (effects (font (size 1.27 1.27)) hide)
     )
   )"""
-    )
 
 
 def add_leds(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "led_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_led_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_led(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            value,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            datasheet,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
+    for (
+        manufacturer,
+        mpn,
+        value,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        datasheet,
+    ) in worksheet_values:
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if manufacturer == "Manufacturer":
+            continue
+        target_str_list.append(
             add_led(
-                pref_lib if preferred == "Y" else std_lib,
                 manufacturer,
                 mpn,
                 value,
@@ -153,3 +148,12 @@ def add_leds(library_dir: Path, worksheet_values: Generator):
                 height,
                 datasheet,
             )
+        )
+
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_led(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )

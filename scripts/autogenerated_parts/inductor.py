@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_inductor(library):
-    library.write(
-        """  (symbol "L" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+
+def add_base_inductor():
+    return """  (symbol "L" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "L" (at -1.27 0 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -47,11 +48,9 @@ def add_base_inductor(library):
     )
   )
 """
-    )
 
 
 def add_inductor(
-    library,
     manufacturer,
     mpn,
     value,
@@ -62,8 +61,7 @@ def add_inductor(
     datasheet,
     rated_current,
 ):
-    library.write(
-        f"""
+    return f"""
   (symbol "{manufacturer} {mpn}" (extends "L")
     (property "Reference" "L" (at 2.54 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -89,40 +87,37 @@ def add_inductor(
     (property "Height" "{height}mm" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "{value} +-{tolerance} {package_description} {rated_current} Inductor" (at 0 0 0)
+    (property "ki_description" "{value} {tolerance} {package_description} {rated_current} Inductor" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
 """
-    )
 
 
 def add_inductors(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "inductor_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_inductor_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_inductor(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            value,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            tolerance,
-            datasheet,
-            rated_current,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
+    for (
+        manufacturer,
+        mpn,
+        value,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        tolerance,
+        datasheet,
+        rated_current,
+    ) in worksheet_values:
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if manufacturer == "Manufacturer":
+            continue
+        target_str_list.append(
             add_inductor(
-                pref_lib if preferred == "Y" else std_lib,
                 manufacturer,
                 mpn,
                 value,
@@ -133,3 +128,11 @@ def add_inductors(library_dir: Path, worksheet_values: Generator):
                 datasheet,
                 rated_current,
             )
+        )
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_inductor(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )

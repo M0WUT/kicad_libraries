@@ -1,3 +1,4 @@
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
 (symbol "CM_Choke" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
     (property "Reference" "FL" (at 0 4.445 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)))
@@ -136,7 +137,8 @@
         (number "4" (effects (font (size 1.27 1.27))))
       )
     )
-  )    
+  )
+      
   (symbol "Wurth 744252101" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -165,7 +167,8 @@
     (property "ki_description" "5k 450mA 9.2x6.6mm Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-  )    
+  )
+      
   (symbol "TDK Lambda ACM7060-301-2PL-TL01" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -194,7 +197,8 @@
     (property "ki_description" "300R 5A 7x6mm Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-  )    
+  )
+      
   (symbol "TDK Lambda ACM7060-701-2PL-TL01" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -223,7 +227,8 @@
     (property "ki_description" "700R 4A 7x6mm Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-  )    
+  )
+      
   (symbol "Wurth Elektronik 744220" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -252,7 +257,8 @@
     (property "ki_description" "4m7 500mA 9.5x6mm Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-  )    
+  )
+      
   (symbol "Wurth Elektronik 744231091" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -281,7 +287,8 @@
     (property "ki_description" "90R 370mA 0805 Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-  )    
+  )
+      
   (symbol "Wurth Elektronik 744231121" (extends "CM_Choke")
     (property "Reference" "FL" (at 2.032 0 90)
       (effects (font (size 1.27 1.27)))
@@ -310,4 +317,5 @@
     (property "ki_description" "120R 370mA 0805 Common Mode Choke" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+  )
   )

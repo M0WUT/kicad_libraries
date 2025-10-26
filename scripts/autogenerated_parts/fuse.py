@@ -1,10 +1,11 @@
 from pathlib import Path
 from typing import Generator
 
+from library import WUTKicadLibrary
 
-def add_base_fuse(library):
-    library.write(
-        """
+
+def add_base_fuse():
+    return """
   (symbol "Fuse"
     (pin_numbers
       (hide yes)
@@ -126,11 +127,9 @@ def add_base_fuse(library):
     (embedded_fonts no)
   )
   """
-    )
 
 
 def add_fuse(
-    library,
     manufacturer,
     mpn,
     package_description,
@@ -140,8 +139,7 @@ def add_fuse(
     rated_current,
     fuse_type,
 ):
-    library.write(
-        f"""
+    return f"""
   (symbol "{manufacturer} {mpn}" (extends "Fuse")
     (property "Reference" "F" (at 0 2.54 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)))
@@ -169,34 +167,31 @@ def add_fuse(
     )
   )
 """
-    )
 
 
 def add_fuses(library_dir: Path, worksheet_values: Generator):
     standard_lib_path = library_dir / "fuse_auto_wut.kicad_sym"
     preferred_lib_path = library_dir / "aaa_fuse_auto_wut.kicad_sym"
 
-    with open(standard_lib_path, "w") as std_lib, open(
-        preferred_lib_path, "w"
-    ) as pref_lib:
-        for lib in [std_lib, pref_lib]:
-            add_base_fuse(lib)
+    std_strs = []
+    pref_strs = []
 
-        for (
-            manufacturer,
-            mpn,
-            rated_current,
-            preferred,
-            package_description,
-            footprint,
-            height,
-            datasheet,
-            fuse_type,
-        ) in worksheet_values:
-            if manufacturer == "Manufacturer":
-                continue
+    for (
+        manufacturer,
+        mpn,
+        rated_current,
+        preferred,
+        package_description,
+        footprint,
+        height,
+        datasheet,
+        fuse_type,
+    ) in worksheet_values:
+        target_str_list = pref_strs if preferred == "Y" else std_strs
+        if manufacturer == "Manufacturer":
+            continue
+        target_str_list.append(
             add_fuse(
-                pref_lib if preferred == "Y" else std_lib,
                 manufacturer,
                 mpn,
                 package_description,
@@ -206,3 +201,12 @@ def add_fuses(library_dir: Path, worksheet_values: Generator):
                 rated_current,
                 fuse_type,
             )
+        )
+
+    _ = WUTKicadLibrary(
+        standard_lib_path,
+        preferred_lib_path,
+        add_base_fuse(),
+        "".join(std_strs),
+        "".join(pref_strs),
+    )
