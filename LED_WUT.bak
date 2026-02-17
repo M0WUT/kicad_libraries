@@ -2730,7 +2730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_WUT:Foshan_RS-C1415MBAR"
 			(at 0 0 0)
 			(effects
 				(font

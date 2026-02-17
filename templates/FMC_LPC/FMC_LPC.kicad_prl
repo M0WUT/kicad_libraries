@@ -118,7 +118,20 @@
   },
   "open_jobsets": [],
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "FMC_LPC.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 3858,
+          "size_y": 1558
+        }
+      }
+    ]
   },
   "schematic": {
     "selection_filter": {

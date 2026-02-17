@@ -1,0 +1,134 @@
+(footprint "NKK_JF15SP1x"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -10 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9951826c-9605-4029-aeee-6c7a9a02f48e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Untitled"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "18360e6f-4a07-403c-9141-024833c6083d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5a17f5b-bb13-4f93-b8cf-b6df33bf1e52")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ce61e8f-e189-4324-9f5e-305d2062ca0b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -9 -9)
+		(end 9 9)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a08e5f9b-ceb8-48df-abda-dc06eee1dbeb")
+	)
+	(fp_rect
+		(start -9.25 -9.25)
+		(end 9.25 9.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "29fa8c4f-8189-4db9-8142-1a91707b2295")
+	)
+	(fp_rect
+		(start -8.85 -8.85)
+		(end 8.85 8.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2b08cea0-ab28-4faa-b4ae-e79593cc7ff6")
+	)
+	(pad "1" thru_hole circle
+		(at -6.35 -5.08)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6c6ec670-afa3-4c01-970f-9367f541b46f")
+	)
+	(pad "2" thru_hole circle
+		(at 6.35 -5.08)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "af2d0dcd-b39e-4929-9594-0224b8686a3d")
+	)
+	(pad "3" thru_hole circle
+		(at -6.35 5.08)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a66a19d5-2894-47ff-9832-3265664427d4")
+	)
+	(pad "4" thru_hole circle
+		(at 6.35 5.08)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "028f32c6-593d-400c-a7b6-40417326fb45")
+	)
+	(embedded_fonts no)
+	(model "${WUT_LIBRARIES}/Switch_WUT.3dshapes/NKK_JF15SP1x.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
