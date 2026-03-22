@@ -20657,7 +20657,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "RJ45_Wurth_7499211125"
+	(symbol "RJ45_Wuerth_7499211125"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -20679,7 +20679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_WUT:RJ45_Wurth_7499211125"
+		(property "Footprint" "Connector_WUT:RJ45_Wuerth_7499211125"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20706,7 +20706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth"
+		(property "Manufacturer" "Wuerth"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20724,7 +20724,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "RJ45_Wurth_7499211125_0_0"
+		(symbol "RJ45_Wuerth_7499211125_0_0"
 			(polyline
 				(pts
 					(xy -12.065 20.32) (xy -14.605 20.32)
@@ -20972,7 +20972,7 @@
 				)
 			)
 		)
-		(symbol "RJ45_Wurth_7499211125_0_1"
+		(symbol "RJ45_Wuerth_7499211125_0_1"
 			(polyline
 				(pts
 					(xy -14.605 22.86) (xy -12.065 22.86)
@@ -22016,7 +22016,7 @@
 				)
 			)
 		)
-		(symbol "RJ45_Wurth_7499211125_1_0"
+		(symbol "RJ45_Wuerth_7499211125_1_0"
 			(pin passive line
 				(at -25.4 -7.62 0)
 				(length 5.08)
@@ -22126,7 +22126,7 @@
 				)
 			)
 		)
-		(symbol "RJ45_Wurth_7499211125_1_1"
+		(symbol "RJ45_Wuerth_7499211125_1_1"
 			(rectangle
 				(start -20.32 30.48)
 				(end 20.32 -38.1)
@@ -29781,6 +29781,73 @@
 			)
 		)
 		(property "MPN" "104031-0811"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "Molex_105057-0001"
+		(extends "USB-A_Amphenol_GSB12121031EU_TH")
+		(property "Reference" "CN"
+			(at 0 3.81 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Molex 105057-0001"
+			(at -1.27 -13.97 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_WUT:USB-A_Molex_105057-0001_TH_Vertical"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/105/105057/1050570001_sd.pdf?inline"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB A Socket TH Vertical"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "105057-0001"
 			(at 0 0 0)
 			(effects
 				(font
