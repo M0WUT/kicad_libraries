@@ -58,17 +58,6 @@
 	(attr exclude_from_pos_files allow_missing_courtyard)
 	(fp_circle
 		(center 0 0)
-		(end 5 0)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "e1799b70-35dc-4436-ae97-c3ef9bfeda7b")
-	)
-	(fp_circle
-		(center 0 0)
 		(end 3.75 0)
 		(stroke
 			(width 0.1)

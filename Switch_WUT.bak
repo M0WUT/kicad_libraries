@@ -5,7 +5,7 @@
 	(symbol "Khon_SC109AM1"
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(property "Reference" "H"
 			(at 0 3.81 0)
 			(do_not_autoplace)
@@ -84,12 +84,12 @@
 			)
 		)
 		(property "Value" "Tactile_Switch_Generic"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(do_not_autoplace)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -323,6 +323,70 @@
 			)
 		)
 		(property "MPN" "TSA06131-100B332CA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "Khon_TSB06331-090D332DA-R0500"
+		(extends "Tactile_Switch_Generic")
+		(property "Reference" "SW"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Khon TSB06331-090D332DA-R0500"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_WUT:Khon_TSB06331-090"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.khon-switch.com/upload/1c/202309/TSB06331.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 6x6mm Tactile Switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Khon"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TSB06331-090D332DA-R0500"
 			(at 0 0 0)
 			(effects
 				(font
